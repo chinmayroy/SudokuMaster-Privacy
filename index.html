@@ -1,33 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Privacy Policy - SudokuMaster</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy | SudokuMaster</title>
+    <!-- Bootstrap 5 CSS + Icons + Google Fonts for modern feel -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts: Inter + Poppins for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #f6f9fc 0%, #eef2f5 100%);
+            color: #1a2c3e;
+            scroll-behavior: smooth;
+        }
+
+        /* modern card styling */
+        .privacy-card {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(0px);
+            border-radius: 2rem;
+            border: none;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.02);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .privacy-card:hover {
+            box-shadow: 0 30px 55px -14px rgba(0, 0, 0, 0.2);
+        }
+
+        /* header gradient accent */
+        .policy-header {
+            border-left: 6px solid #2c7da0;
+            background: linear-gradient(95deg, #ffffff 0%, #fefefe 100%);
+            border-radius: 1.5rem;
+            padding: 1.25rem 2rem;
+        }
+
+        .section-icon {
+            font-size: 1.8rem;
+            color: #2c7da0;
+            background: #e9f3f7;
+            width: 48px;
+            height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1.2rem;
+            transition: all 0.2s;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.65rem;
+            letter-spacing: -0.01em;
+            color: #0f2b3b;
+            margin-bottom: 0.5rem;
+        }
+
+        .lead-text {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #3e5a6b;
+        }
+
+        .badge-date {
+            background-color: #e2e9ef;
+            color: #1f5068;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+        }
+
+        .btn-download {
+            background: #1f6e8c;
+            color: white;
+            border-radius: 60px;
+            padding: 12px 28px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.25s ease;
+            border: none;
+            box-shadow: 0 5px 12px rgba(31, 110, 140, 0.25);
+        }
+
+        .btn-download:hover {
+            background: #0e5a75;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -8px rgba(31, 110, 140, 0.4);
+            color: white;
+        }
+
+        .footer-note {
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            background: #fafcfd;
+            border-radius: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        /* list styling */
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .custom-list li {
+            padding-left: 1.7rem;
+            position: relative;
+            margin-bottom: 0.6rem;
+        }
+        .custom-list li i {
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+            color: #2c7da0;
+            font-size: 1.2rem;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 576px) {
+            .privacy-card {
+                border-radius: 1.5rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .policy-header {
+                padding: 1rem 1.25rem;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto;">
+<body>
 
-    <h1>Privacy Policy</h1>
-    <p>Last updated: January 24, 2026</p>
+    <div class="container py-4 py-md-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                
+                <!-- main card with privacy content -->
+                <div class="privacy-card p-4 p-md-5">
+                    
+                    <!-- header with icon & title -->
+                    <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 pb-1">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="section-icon">
+                                <i class="bi bi-shield-lock-fill fs-3"></i>
+                            </div>
+                            <div>
+                                <h1 class="display-6 fw-bold" style="font-family: 'Poppins', sans-serif; color: #0b3b4f;">Privacy Policy</h1>
+                                <div class="badge-date mt-1">
+                                    <i class="bi bi-calendar3 me-1"></i> Last updated: January 24, 2026
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <p>This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use <strong>SudokuMaster</strong>.</p>
+                    <!-- intro / summary -->
+                    <div class="policy-header mb-5">
+                        <div class="d-flex gap-3 align-items-start">
+                            <i class="bi bi-info-circle-fill fs-4" style="color: #2c7da0;"></i>
+                            <div>
+                                <p class="lead-text mb-0 fw-medium">
+                                    <strong>SudokuMaster</strong> is built with your privacy in mind.  
+                                    We believe in transparency — no account required, no personal data collection, just pure sudoku enjoyment.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <h2>1. Data Collection</h2>
-    <p>SudokuMaster is designed as a standalone game. We do not require you to create an account, and we do not collect, store, or share any personal data (such as your name, email address, or phone number).</p>
+                    <!-- 1. Data Collection -->
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                <i class="bi bi-database-slash"></i>
+                            </div>
+                            <h2 class="mb-0">1. Data Collection</h2>
+                        </div>
+                        <div class="ps-0 ps-md-4">
+                            <p class="lead-text">SudokuMaster is designed as a <strong>standalone game</strong> that respects your digital sovereignty. We do not require you to create an account, and we never collect, store, or share any personal data — such as your name, email address, phone number, or location.</p>
+                            <div class="mt-3 alert alert-light border-0 bg-light rounded-4 p-3">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> 
+                                <span class="small fw-semibold">Zero personal data footprint · No tracking cookies · No mandatory logins</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <h2>2. Third-Party Services</h2>
-    <p>The app may use third-party services that may collect information used to identify you. These may include:</p>
-    <ul>
-        <li>Google Play Services</li>
-        <li>Google Analytics for Firebase (if applicable)</li>
-    </ul>
+                    <!-- 2. Third-Party Services -->
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                <i class="bi bi-plug"></i>
+                            </div>
+                            <h2 class="mb-0">2. Third-Party Services</h2>
+                        </div>
+                        <div class="ps-0 ps-md-4">
+                            <p class="lead-text">While the game itself does not collect personal data, it may integrate trusted third-party services that help us improve stability, analytics, or distribution. These services operate under their own privacy policies:</p>
+                            <ul class="custom-list mt-3">
+                                <li><i class="bi bi-google-play"></i> <strong>Google Play Services</strong> – handles secure app distribution, updates, and optional achievements (if any).</li>
+                                <li><i class="bi bi-bar-chart-steps"></i> <strong>Google Analytics for Firebase</strong> – used solely for aggregated usage statistics (like crash reports, device type) to enhance app performance. No personal identifiers are linked to your gameplay.</li>
+                            </ul>
+                            <p class="small text-secondary mt-2 mb-0"><i class="bi bi-shield-check"></i> These services may collect anonymized data in accordance with Google's privacy policies. You can learn more at <a href="https://policies.google.com/privacy" target="_blank" class="text-decoration-underline">Google Privacy Policy</a>.</p>
+                        </div>
+                    </div>
 
-    <h2>3. Children’s Privacy</h2>
-    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+                    <!-- 3. Children’s Privacy -->
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                <i class="bi bi-emoji-smile"></i>
+                            </div>
+                            <h2 class="mb-0">3. Children’s Privacy</h2>
+                        </div>
+                        <div class="ps-0 ps-md-4">
+                            <p class="lead-text">SudokuMaster does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us — we will take necessary steps to remove that information from our servers (though we currently store none).</p>
+                        </div>
+                    </div>
 
-    <h2>4. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
+                    <!-- 4. Changes to This Policy -->
+                    <div class="mb-5">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <h2 class="mb-0">4. Changes to This Policy</h2>
+                        </div>
+                        <div class="ps-0 ps-md-4">
+                            <p class="lead-text">We may update our Privacy Policy from time to time to reflect improvements in our practices or legal requirements. Any changes will be posted on this page, and the "Last updated" date will be revised. We encourage you to review this page periodically for any modifications. Continued use of SudokuMaster after changes implies acceptance of the updated policy.</p>
+                        </div>
+                    </div>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, you can contact us via our developer profile on the Google Play Store.</p>
+                    <!-- 5. Contact Us + Download CTA combined -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                    <i class="bi bi-envelope-paper"></i>
+                                </div>
+                                <h2 class="mb-0">5. Contact Us</h2>
+                            </div>
+                            <div class="ps-0 ps-md-1">
+                                <p class="lead-text">Have questions, suggestions, or privacy concerns? Reach out to us through our developer profile on the Google Play Store. We’re committed to responding promptly.</p>
+                                <div class="mt-2">
+                                    <i class="bi bi-android2 me-1 text-success"></i> 
+                                    <span class="small">Developer: Chinmay Roy · SudokuMaster Support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="section-icon" style="background: #eef2f0; width: 42px; height: 42px;">
+                                    <i class="bi bi-download"></i>
+                                </div>
+                                <h2 class="mb-0">6. Download Now</h2>
+                            </div>
+                            <div class="ps-0 ps-md-1">
+                                <p class="lead-text">Ready to enjoy endless puzzles? Get the official SudokuMaster app from the Google Play Store and experience a clean, distraction-free sudoku journey.</p>
+                                <div class="mt-3">
+                                    <a href="https://play.google.com/store/apps/details?id=com.chinmayroy.SudokuMaster&pcampaignid=web_share" target="_blank" class="btn btn-download">
+                                        <i class="bi bi-google-play me-2"></i> Get it on Google Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- subtle additional transparency note -->
+                    <div class="footer-note p-4 mt-4 text-center text-md-start">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                            <div>
+                                <i class="bi bi-shield-heart me-1" style="color: #2c7da0;"></i> 
+                                <span class="small">SudokuMaster — Privacy by design. No hidden data collection.</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-laptop"></i> <span class="small">Version 2.0 | Family-friendly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- extra decorative divider -->
+                    <div class="mt-2 text-center opacity-50 small">
+                        <i class="bi bi-dot"></i> pure logic · zero tracking <i class="bi bi-dot"></i>
+                    </div>
+
+                </div>
+                <!-- end privacy card -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS bundle (optional for toggles, but not necessary for layout) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
